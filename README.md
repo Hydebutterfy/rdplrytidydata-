@@ -1,7 +1,7 @@
 # rdplrytidydata-
 #Our University, the web is not good enough to download the files through R(always with curl problems).
 # I download the files from websites and save it in the boot file.
-#1，load the data into R and merges the training and the test sets to create one data set.
+#load the data into R and merges the training and the test sets to create one data set.
 test_x<-read.table("./test/X_test.txt")
 View(test_x)
 test_y<-read.table("./test/y_test.txt")
