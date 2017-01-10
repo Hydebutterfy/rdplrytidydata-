@@ -52,7 +52,7 @@ meandata<-selectdata%>%
     group_by(subject,activity) %>%
     summarise_each(funs(mean))
 
-write.csv(meandata, "meandata.csv")
+write.table(meandata, "meandata.txt",row.name=FALSE)
 
 
 
