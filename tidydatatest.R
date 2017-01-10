@@ -1,7 +1,7 @@
 
-#In China or our University the web is not good enough to download the files through R.(always with curl problems) 
+#Our University, the web is not good enough to download the files through R.(always with curl problems) 
 # I download the files from websites and save it in the boot file.
-#1.Merges the training and the test sets to create one data set.
+#Merges the training and the test sets to create one data set.
 test_x<-read.table("./test/X_test.txt")
 View(test_x)
 test_y<-read.table("./test/y_test.txt")
@@ -52,7 +52,7 @@ meandata<-selectdata%>%
     group_by(subject,activity) %>%
     summarise_each(funs(mean))
 
-write.csv(finaldata, "meandata.csv")
+write.csv(meandata, "meandata.csv")
 
 
 
